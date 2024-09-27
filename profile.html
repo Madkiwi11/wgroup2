@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Women in tech</title>
+    <link rel="stylesheet" href="./style/profileStyle.css">
+    <link rel="stylesheet" href="./style/profileResponsive.css">
+    <link rel="stylesheet" href="./style/styles1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<style>
+    .navbar {
+    width: 100%; /* set the width to the full viewport width */
+    padding: 0 20px; /* add some padding to the left and right */
+    box-sizing: border-box;
+    }
+    @media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 40px;
+        left: 0;
+        background: linear-gradient(90deg, #ac37b9 0%, #97A4D5 60.75%, #91ABD7 67.48%, #8FAED8 71.1%, #8AB5DA 76.65%, #99B8DE 85.5%, #7BC7DF 100%);
+        padding: 10px 0;
+        gap: 10px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        z-index: 1000;
+    }
+}
+    .footer {
+  width: 100%; /* set the width to the full viewport width */
+  padding: 0 10px; /* add some padding to the left and right */
+  box-sizing: border-box; /* make sure the padding is included in the width */
+}
+</style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">
+                <img src="img/logo.png" alt="Logo">
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="translate-text" data-en="Home" data-ar="الصفحة الرئيسية">Home</a></li>
+                <li><a href="about.html" class="translate-text" data-en="About" data-ar="عن الشركة">About</a></li>
+                <li><a href="program.html" class="translate-text" data-en="Programs" data-ar="البرامج">Programs</a></li>
+                <li><a href="myProgram.html" class="translate-text" data-en="My Courses" data-ar="دوراتي">My Courses</a></li>
+                <li><a href="En.html" class="translate-text" data-en="Enroll" data-ar="التسجيل">Enroll</a></li>
+            </ul>
+            <div class="icons">
+                <a href="#" class="icon translate-icon" id="translate-icon">
+                    <span id="translate-text">EN</span>
+                </a>
+                <a href="#" class="icon search-icon"><i class="fas fa-search"></i></a>  
+                <a href="#" class="icon dark-mode-icon" id="dark-mode-toggle"><i class="fas fa-moon"></i></a>
+                <a href="profile.html" class="icon profile-icon"><i class="fas fa-user"></i></a>
+                <a href="signUp.html" class="sign-up translate-text" data-en="Sign Up" data-ar="التسجيل">Sign Up</a>
+                <button class="menu-toggle" id="menu-toggle"><i class="fas fa-bars"></i></button>
+            </div>
+        </div>
+    </nav>
+    <section class="profileBody containerMain">
+        <div class="main ">
+            <div class="personalInfo">
+                <h3>Personal Details</h3>
+                <img src="./assets/prp.png" alt="profile picture">
+                <h4>User Full Name</h4>
+                <h5>useremail@EXAMPLE.COM</h5>
+                <h5>Iraq, Baghdad</h5>
+                <h5>09485769389</h5>
+            </div>
+    
+            <div class="careerPlan">
+                <h3>Career Plan</h3>
+                <div class="careerPlanInfo">
+                    <h4>Desired Roles</h4>
+    
+                    <div class="prpIcon">
+                        <img src="./assets/person.png" alt="Icon">
+                        <h5>Front-End Web Developer</h5>
+                    </div>
+                </div>   
+            </div>
+            
+            <button class="editInfoBtn"> Edit Information</button>
+        
+        </div>
+
+        <div class="right">
+            <div class="Education">
+                <div class="educationHeader">
+                    <h3>Education</h3>
+                    <button>Add More</button>
+                </div>
+
+                <div class="institutes">
+                    <div class="educationContent">
+                        <img class="cap" src="./assets/cap.png" alt="graduation cap">
+                        <div class="instituteInfo">
+                            <h4>University Of Baghdad</h4>
+                            <h5>Computer Science</h5>
+                            <h6>October 2020 - June 2024</h6>
+                        </div>
+                        <div class="icons">
+                            <button class="edit-btn">
+                              <span>Edit</span>
+                              <img src="./assets/edit.png" alt="Edit Icon">
+                              <img src="./assets/delete.png" alt="Delete Icon">
+                            </button>
+                        </div>
+                    </div>
+
+                    <hr>
+
+                    <div class="educationContent">
+                        <img class="cap" src="./assets/cap.png" alt="graduation cap">
+                        <div class="instituteInfo">
+                            <h4>University Of Baghdad</h4>
+                            <h5>Computer Science</h5>
+                            <h6>October 2020 - June 2024</h6>
+                        </div>
+                        <div class="icons">
+                            <button class="edit-btn">
+                              <span>Edit</span>
+                              <img src="./assets/edit.png" alt="Edit Icon">
+                              <img src="./assets/delete.png" alt="Delete Icon">
+                            </button>
+                        </div>
+                    </div>
+
+                    <hr>
+
+                    <div class="educationContent">
+                        <img class="cap" src="./assets/cap.png" alt="graduation cap">
+                        <div class="instituteInfo">
+                            <h4>University Of Baghdad</h4>
+                            <h5>Computer Science</h5>
+                            <h6>October 2020 - June 2024</h6>
+                        </div>
+
+                        <div class="icons">
+                            <button class="edit-btn">
+                              <span>Edit</span>
+                              <img src="./assets/edit.png" alt="Edit Icon">
+                              <img src="./assets/delete.png" alt="Delete Icon">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                
+            </div>
+
+            <div class="courses">
+                <h3>Courses</h3>
+
+                <div class="coursesCards">
+                    <h4>In Progress</h4>
+                    <div class="currentCourseCard">
+                        <div class="leftOfCard container">
+                            <img src="./assets/header2.jpg" alt="">
+                            <h4>Mentors</h4>
+                            <div class="mentors">
+                                <h5>Mentor Name</h5>
+                                <h5>Mentor Name</h5>
+                            </div>
+                        </div>
+
+                        <div class="rightOfCard">
+                            <div class="titleInfo">
+                                <h4>Course Title</h4>
+                                <h6>20 Jul 2023</h6>
+                            </div>
+                            <div class="tags">
+                                <ul>
+                                    <li>Computer Science</li>
+                                    <li>Web Design</li>
+                                    <li>HTML</li>
+                                </ul>
+                            </div>
+                            <div class="content">
+                                <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Id eu parturient vulputate natoque hendrerit. Porttitor malesuada hac feugiat ad lobortis volutpat. Euismod quam lectus porta natoque, blandit felis purus. Rhoncus himenaeos suspendisse mi vehicula placerat finibus </p>
+                            </div>
+                            <img src="./assets/arrow.png" alt="arrow">
+                            <h4 class="view"><a href="myProgram.html">View More</a></h4>
+                        </div>
+                    </div>
+
+                    <h4 class="completed">Completed</h4>
+
+                    <div class="completedCourseCard">
+                        <h3>No completed Courses</h3>
+                    </div>
+                </div>
+
+            </div>
+            
+        </div>
+
+    </section> 
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="img/logo.png" alt="Logo" class="footer-logo-image">
+            </div>
+            <div class="footer-description">
+                <p>Contact us</p>
+                <p>Address: Iraq, Baghdad, Al Jadriya</p>
+                <p>Email: support@moon.iq</p>
+                <p>Copyright © 2024 moon | Women in Tech | G-2</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li><a href="#"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                    <li><a href="#"><i class="fab fa-linkedin-in"></i> LinkedIn</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    
+
+
+    <script src="./scripts/script1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js"></script>
+
+</body>
+</html>

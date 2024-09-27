@@ -1,0 +1,298 @@
+@media only screen and (max-width: 470px) {
+    :root{
+        --darkPurple: #674188;
+    --lightPurple: #B09CC1;
+    --buttonColor: #9B86BD;
+    --gray: #7A787B;
+        --mainMargin: 20px;
+        --secondMargin: 10px;
+        --gapBetweenParts: 8px;
+    }
+
+    .containerMain {
+        width: 420px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 15px;
+        margin-top: var(--mainMargin);
+    }
+
+    .profileBody {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: var(--gapBetweenParts);
+    }
+    .main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        gap: var(--gapBetweenParts);
+    }
+    .personalInfo , .careerPlan {
+        border-radius: 15px;
+        width: 85%;
+        box-sizing: border-box;
+        gap: 6px;
+    }
+
+    .personalInfo h3, .careerPlan h3{
+        font-size: 22px;
+        margin-bottom: var(--mainMargin);
+    }
+    .personalInfo img {
+        width: 80px;
+    }
+    .personalInfo h4{
+        font-size: 18px;
+    }
+    .personalInfo h5{
+        font-size: 14px;
+        margin-bottom: var(--secondMargin);
+    }
+
+    .careerPlan .careerPlanInfo {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        transform: translateX(-50px);
+        gap: 6px;
+        margin-bottom: var(--mainMargin);
+    }
+    .careerPlan h4 {
+        font-size: 18px;
+    }
+    .careerPlan .prpIcon {
+        display: flex;
+        align-items: start;
+        gap: 10px;
+    }
+    .careerPlan .prpIcon h5 {
+        font-size: 14px;
+    }
+    .main .editInfoBtn{  
+        font-size: 16px;
+        border-radius: 8px;
+        transform: translateX(0px);
+        margin-top: var(--secondMargin);
+       
+    } 
+    
+    .right {
+      width: 100%;
+      transform: translateX(30px);
+      margin-top: var(--mainMargin);
+    }
+    .Education{
+        width: 85%;
+        box-sizing: border-box;
+    }
+    .educationHeader h3{
+        font-size: 22px;
+        margin-bottom: var(--mainMargin);
+    }
+    .educationHeader button {
+        display: block;
+        width: auto;
+        color: var(--buttonColor);
+        background-color: transparent;
+        border: none;
+        font-size: 12px;
+        font-weight: 400;
+        padding: 10px 15px;
+    }
+    .institutes {
+        gap: 8px;
+    }
+    .educationContent img {
+        width: 18px;
+        height: 18px;
+        
+    }
+    .instituteInfo {
+        transform: translateX(0px);
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+    .instituteInfo h4{
+        font-size: 12px;
+    }
+    .instituteInfo h5{
+        font-size: 12px;
+    }
+    .instituteInfo h6{
+        font-size: 11px;
+    }
+    .edit-btn {
+        width: 65px;
+        border-radius: 5px;
+        font-size: 12px;
+        padding: 5px 15px;
+        gap: 15px;
+        
+      }
+      .edit-btn span {
+        transition: transform 0.3s ease-in-out;
+        transform: translateX(4px);
+      }
+      
+      .edit-btn img {
+        display: none; 
+        width: 12px;
+        height: 12px;
+        transition: transform 0.3s ease-in-out;
+      }
+      
+      .edit-btn:hover span {
+        transform: translateX(-200%); 
+      }
+      
+      .edit-btn:hover img {
+        display: block; 
+        transform: translateX(-360%); 
+        animation: swipeIn 0.3s ease-in-out; }
+      
+      @keyframes swipeIn {
+        0% {
+          transform: translateX(100%); /* start from the right */
+        }
+        100% {
+          transform: translateX(-360%); /* end at the initial position */
+        }
+      }
+    
+    
+    hr {
+        border: none; 
+        border-top: 1px solid #ccc; 
+        margin: -5px 0; 
+      }
+    
+    .courses {
+        width: 85%;
+        gap: 5px;
+    }
+    .courses h3{
+        font-size: 22px;
+    }
+    .courses .coursesCards{
+        display: flex;
+        flex-direction: column;
+    }
+    .courses .coursesCards h4{
+        font-size: 16px;
+        color: var(--lightPurple);
+        font-weight: 400;
+    }
+    .coursesCards .currentCourseCard {
+        width: 96%;
+        height: 550px;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        border-radius: 9px;
+        overflow: hidden;
+        gap: 10px;
+    }
+
+    .currentCourseCard .leftOfCard  img{
+        height: auto;
+        width: 98%;
+        background-size: cover;
+        flex-shrink: 0;
+        border-radius: 10px;
+        margin-bottom: 7px;
+        margin-top: 3px;
+    }
+    .currentCourseCard .leftOfCard  h4{
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+    .currentCourseCard .leftOfCard  .mentors {
+        display: flex;
+        justify-content: space-between;
+        gap: 60px;
+    }
+    .currentCourseCard .leftOfCard  .mentors h5 {
+        font-size: 12px;
+    }
+    .rightOfCard .titleInfo {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+      
+    .rightOfCard .titleInfo h4 {
+        font-size: 18px;
+        font-weight: 600;
+        transform: translate(5px, 10px);
+      }
+      
+    .rightOfCard .titleInfo h6 {
+        font-size: 12px;
+        transform: translate(5px, -215px);
+      }
+    .rightOfCard .tags ul {
+        font-size: 11px;
+        gap: 5px;
+        transform: translate(-10px, -215px);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        max-width: 100%; 
+        padding: 10px;
+    }
+    .rightOfCard .tags ul li {
+        padding: 5px 10px;
+        background-color: #D1C6DC;
+        border-radius: 5px;
+        margin: 5px;
+        flex-basis: calc(33.33% - 10px);
+        width: auto;
+    
+    }
+    .rightOfCard .content p {
+        width: 270px;
+        font-size: 10px;
+        transform: translate(9px, -218px);
+    }
+    .rightOfCard img {
+        width: 7px;
+        margin-top: 40px;
+        margin-left: auto;
+        transform: translate(-20px, -240px); 
+      }
+    .rightOfCard a{
+        font-size: 16px;
+    }
+    .rightOfCard .view {
+        transform: translate(140px, -260px);
+    }
+
+    .completed {
+        display: flex;
+        flex-direction: column;
+    }
+    .coursesCards .completedCourseCard {
+        width: 96%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 9px;
+        overflow: hidden;
+        gap: 10px;
+        padding: 5px 10px;
+    }
+    .completedCourseCard h3 {
+        font-family: exo;
+        font-weight: 400px;
+        font-size: 16px;
+        
+    }
+}

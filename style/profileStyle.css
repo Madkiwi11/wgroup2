@@ -1,0 +1,546 @@
+
+:root{
+    --darkPurple: #674188;
+    --lightPurple: #B09CC1;
+    --buttonColor: #9B86BD;
+    --gray: #7A787B;
+    --mainMargin: 30px;
+    --secondMargin: 20px;
+    --gapBetweenParts: 15px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+}
+body {
+    display: grid;
+    place-items: center; 
+    height: 100vh; 
+    margin: 0; 
+    box-sizing: border-box;
+  }
+
+.containerMain {
+    width: 1220px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 30px;
+    margin-top: var(--mainMargin);
+}
+.profileBody {
+    display: flex;
+    align-items: start;
+    gap: var(--gapBetweenParts);
+}
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: var(--gapBetweenParts);
+}
+.personalInfo , .careerPlan {
+    border: 1px solid var(--lightPurple);
+    border-radius: 25px;
+    width: 300px;
+    padding: var(--gapBetweenParts);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+.personalInfo:hover, .careerPlan:hover {
+    box-shadow: 0px 1px 4px 1px rgba(0, 0, 0, 0.25);
+    transform: translateY(-2px);
+  }
+.personalInfo h3, .careerPlan h3{
+    font-family: 'glacialRegular';
+    color: var(--darkPurple);
+    font-size: 32px;
+    font-weight: lighter;
+    margin-bottom: var(--mainMargin);
+}
+
+.personalInfo img {
+    width: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.personalInfo h4{
+    font-family: 'glacialRegular';
+    color: var(--gray);
+    font-size: 24px;
+    font-weight: lighter;
+}
+.personalInfo h5{
+    font-family: 'glacialRegular';
+    color: var(--gray);
+    font-size: 16px;
+    font-weight: lighter;
+}
+.careerPlan .careerPlanInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+}
+.careerPlan h4 {
+    font-family: 'glacialRegular';
+    font-size: 18px;
+    color: var(--lightPurple);
+    font-weight: lighter;
+}
+.careerPlan .prpIcon {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.careerPlan .prpIcon h5 {
+    font-family: 'glacialRegular';
+    font-size: 16px;
+    font-weight: lighter;
+    color: var(--lightPurple);
+}
+.main .editInfoBtn{
+    
+    background-color: var(--buttonColor);
+    color: white;
+    font-size: 18px;
+    font-weight: lighter;
+    font-family: 'glacialRegular';
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    transform: translateX(55px);
+    transition: background-color 0.3s ease;
+} 
+
+.main .editInfoBtn:hover {
+    background-color: rgb(137, 65, 145);
+}
+.right {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: var(--gapBetweenParts);
+    transform: translateX(-90px);
+    width: 65%;
+
+}
+.Education{
+    width: 110%;
+    height: auto;
+    flex-shrink: 0;
+    border-radius: 20px;
+    padding: var(--mainMargin);
+    border: 0.5px solid #9B86BD;
+    transition: box-shadow 0.3s, transform 0.3s;
+    display: flex;
+    flex-direction: column;
+    gap: var(--gapBetweenParts);
+}
+.Education:hover {
+    box-shadow: 0px 1px 4px 1px rgba(0, 0, 0, 0.25);
+    transform: translateY(-2px);
+  }
+.educationHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.educationHeader h3{
+    width: 151px;
+    height: 29px;
+    flex-shrink: 0;
+    font-family: 'glacialRegular';
+    color: var(--darkPurple);
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+    margin-bottom: var(--mainMargin);
+}
+.educationHeader button {
+    display: block;
+    width: 120px;
+    background-color: var(--buttonColor);
+    color: white;
+    font-size: 16px;
+    font-weight: lighter;
+    font-family: 'glacialRegular';
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    margin-top: -10px; 
+    transition: background-color 0.3s ease;
+}
+.educationHeader button:hover {
+    background-color: rgb(137, 65, 145);
+}
+.institutes {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.educationContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.educationContent img {
+    width: 40px;
+    height: 40px;
+    
+}
+.instituteInfo {
+    transform: translateX(-180px);
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.instituteInfo h4{
+    font-family: Inter;
+    font-weight: bold;
+    font-size: 18px;
+    color: var(--darkPurple);
+}
+.instituteInfo h5{
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--gray);
+}
+.instituteInfo h6{
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--gray);
+}
+
+.edit-btn {
+    width: 75px;
+    background-color: transparent; 
+    border: 1px solid var(--buttonColor);
+    border-radius: 8px;
+    font-family: exo;
+    font-weight: 400;
+    font-size: 16px;
+    padding: 5px 20px;
+    cursor: pointer;
+    overflow: hidden; 
+    display: flex; 
+    align-items: center; 
+    gap: 20px;
+  }
+  
+  .edit-btn span {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .edit-btn img {
+    display: none; /* hide the icons initially */
+    width: 15px;
+    height: 15px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .edit-btn:hover span {
+    transform: translateX(-220%); 
+  }
+  
+  .edit-btn:hover img {
+    display: block; 
+    transform: translateX(-395%); /* move the icons into the frame from the right */
+    animation: swipeIn 0.3s ease-in-out; /* add an animation to swipe in the icons */
+  }
+  
+  @keyframes swipeIn {
+    0% {
+      transform: translateX(100%); /* start from the right */
+    }
+    100% {
+      transform: translateX(-395%); /* end at the initial position */
+    }
+  }
+
+
+hr {
+    border: none; 
+    border-top: 1px solid #ccc; 
+    margin: -5px 0; 
+  }
+
+/** Courses Styling **/
+.courses {
+    width: 110%;
+    height: auto;
+    flex-shrink: 0;
+    border-radius: 20px;
+    padding: var(--mainMargin);
+    border: 0.5px solid #9B86BD;
+    transition: box-shadow 0.3s, transform 0.3s;
+    display: flex;
+    flex-direction: column;
+    gap: var(--gapBetweenParts);
+}
+.courses:hover {
+    box-shadow: 0px 1px 4px 1px rgba(0, 0, 0, 0.25);
+    transform: translateY(-2px);
+}
+.courses h3{
+    flex-shrink: 0;
+    font-family: 'glacialRegular';
+    color: var(--darkPurple);
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+    margin-bottom: var(--secondMargin);
+}
+.courses .coursesCards{
+    display: flex;
+    flex-direction: column;
+}
+.courses .coursesCards h4{
+    font-family: 'glacialRegular';
+    font-size: 18px;
+    color: var(--lightPurple);
+    font-weight: lighter;
+    margin-bottom: var(--gapBetweenParts);
+}
+.coursesCards .currentCourseCard {
+    width: 750px;
+    height: 270px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 9.455px;
+    background: rgba(155, 134, 189, 0.11);
+    padding: var(--secondMargin);
+    margin-left: var(--secondMargin);
+    gap: 20px;
+}
+.currentCourseCard .leftOfCard  {
+display: flex;
+flex-direction: column;
+}
+.leftOfCard {
+    display: flex;
+    align-items: center;
+}
+.currentCourseCard .leftOfCard  img{
+    height: 120px;
+    width: 200px;
+    flex-shrink: 0;
+    border-radius: 15px;
+    margin-bottom: 7px;
+}
+.currentCourseCard .leftOfCard  h4{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    color: var(--darkPurple);
+    text-align: center;
+    font-family: 'Inter';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    text-transform: capitalize;
+    margin-bottom: 7px;
+}
+.currentCourseCard .leftOfCard  h5 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    color: var(--gray);
+    text-align: center;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 20px;
+    text-transform: capitalize;
+    margin-bottom: 2px;
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis;
+}
+.leftOfCard h4, .leftOfCard h5 {
+    margin: 0; /* remove default margin */
+    padding: 0; /* remove default padding */
+    width: fit-content; /* make the width fit the content */
+}
+
+.rightOfCard {
+    display: flex;
+    flex-direction: column;
+}
+.rightOfCard .titleInfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 220px;
+  }
+  
+.rightOfCard .titleInfo h4 {
+    color: rgba(103, 65, 136, 0.69);
+    font-family: exo;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: capitalize;
+  }
+  
+.rightOfCard .titleInfo h6 {
+    color: #A39B9B;
+    font-family: exo;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    text-transform: capitalize;
+    transform: translateX(-10px);
+  }
+.rightOfCard .tags ul {
+    display: flex;
+    list-style: none;
+    font-size: 12px;
+    font-family: inter;
+    font-weight: 400;
+    gap: 8px;
+    color: var(--darkPurple);
+    transform: translateY(-10px);
+}
+.rightOfCard .tags ul li {
+    padding: 5px 15px;
+    background-color: #D1C6DC;
+    border-radius: 5px;
+    width: auto;
+
+}
+.rightOfCard .content p {
+    width: 400px;
+    margin-top: var(--secondMargin);
+    color: var(--gray);
+    font-family: exo;
+    font-size: 12.346px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+}
+.rightOfCard img {
+    width: 8px;
+    margin-top: 40px;
+    margin-left: auto; 
+  }
+.rightOfCard a{
+    text-decoration: none;
+    color: var(--darkPurple);
+    font-family: exo;
+    font-weight: 400;
+    font-size: 16px;
+}
+.rightOfCard .view {
+    transform: translate(300px, -20px);
+}
+.completed {
+    font-family: 'glacialRegular';
+    font-size: 18px;
+    color: var(--lightPurple);
+    font-weight: lighter;
+    margin-bottom: var(--gapBetweenParts);
+    margin-top: var(--mainMargin);
+}
+.coursesCards .completedCourseCard {
+    width: 750px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 9.455px;
+    background: rgba(155, 134, 189, 0.11);
+    margin-left: var(--secondMargin);
+    gap: 20px;
+}
+.completedCourseCard h3 {
+    font-family: exo;
+    font-weight: 400px;
+    font-size: 28px;
+    color: var(--gray);
+    padding-top: var(--secondMargin);
+}
+
+
+body.dark-mode .containerMain,
+body.dark-mode .profileBody,
+body.dark-mode .main,
+body.dark-mode .personalInfo,
+body.dark-mode .careerPlan,
+body.dark-mode .courses,
+body.dark-mode .Education {
+    background-color: #333;
+    border-color: #5a5a5a;
+}
+
+body.dark-mode .personalInfo h3, 
+body.dark-mode .careerPlan h3,
+body.dark-mode .courses h3,
+body.dark-mode .educationHeader h3 {
+    color: #e0e0e0;
+}
+
+body.dark-mode .personalInfo:hover, 
+body.dark-mode .careerPlan:hover, 
+body.dark-mode .Education:hover,
+body.dark-mode .courses:hover {
+    box-shadow: 0px 1px 4px 1px rgba(255, 255, 255, 0.25);
+    transform: translateY(-2px);
+}
+
+body.dark-mode .editInfoBtn, 
+body.dark-mode .educationHeader button {
+    background-color: #5a5a5a;
+    color: white;
+}
+
+body.dark-mode .editInfoBtn:hover,
+body.dark-mode .educationHeader button:hover {
+    background-color: #797979;
+}
+
+body.dark-mode .rightOfCard .tags ul li {
+    background-color: #4b4b4b;
+}
+
+body.dark-mode hr {
+    border-top: 1px solid #5a5a5a;
+}
+
+body.dark-mode .mytabs label:hover {
+    background-color: #5a5a5a; /* Hover effect */
+}
+
+
+body.dark-mode .personalInfo h4,
+body.dark-mode .personalInfo h5,
+body.dark-mode .careerPlan h4,
+body.dark-mode .careerPlan .prpIcon h5,
+body.dark-mode .instituteInfo h5,
+body.dark-mode .instituteInfo h6,
+body.dark-mode .rightOfCard .titleInfo h6,
+body.dark-mode .rightOfCard .content p,
+body.dark-mode .completedCourseCard h3,
+body.dark-mode .currentCourseCard .leftOfCard h5 {
+    color: #ffffff; 
+}
+
+

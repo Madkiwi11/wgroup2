@@ -1,0 +1,793 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Inter;
+}
+button {
+    cursor: pointer;
+}
+.container {
+    max-width: 1220px; 
+    margin: 0 auto;
+    padding: 0 30px; 
+  }
+.dash-nav {
+    padding: 20px 30px;
+    background: #FFF;
+    box-shadow: 0px 5px 25px 13px rgba(0, 0, 0, 0.20);
+}
+.navContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.profileImg {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    list-style-type: none;
+}
+.profileImg  img{
+    width: 60px;
+    object-fit: cover;
+}
+.profileImg #image {
+    border-radius: 50%;
+}
+.profileImg #settings {
+    width: 30px;
+}
+.searchBar input[type="text"] {
+    background-image: url('./dashAssets/search.png'); 
+    background-size: 20px 20px; 
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding-left: 50px; 
+    color: gray;
+    border: 1px solid #9747FF;
+    border-radius: 10px;
+    width: 500px;
+    height: 40px;
+    align-items: center;
+}
+/** Navbar styling **/
+
+
+/** hero section Styling **/
+.hero-section {
+    background: #F8F2FF;
+    padding-bottom: 60px;
+   
+}
+
+.general-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 25px;
+    padding: 30px; 
+}
+.general-card1, .general-card2, .general-card3, .general-card4 {
+    flex: 1; /* make the cards flexible */
+    max-width: calc((100% - 50px) / 4); /* calculate the max width of each card */
+    height: auto;
+    padding: 30px;
+    align-items: center;
+    gap: 25px;
+    flex-shrink: 0;
+    border-radius: 15px;
+    background: var(--Gray-White, #FFF);
+  }
+.general-card1 {
+    display: flex;
+    padding: 30px;
+    align-items: center;
+    gap: 25px;
+    border-radius: 15px;
+    background: var(--Gray-White, #FFF);
+}
+.general-card1 .general-icon {
+    display: flex;
+    padding: 10px;
+    border-radius: 8px;
+    background: var(--Error-100, #FFF0F0);
+}
+.general-card1 .general-icon img{
+    width: 35px;
+    height: 35px;
+}
+.general-card1 .general-card-text {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+}
+.general-card1 .general-card-text h4 {
+    color: var(--Gray-900, #1D2026);
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 29.246px; 
+}
+.general-card1 .general-card-text h5 {
+    color: var(--Gray-700, #4E5566);
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20.107px; 
+    letter-spacing: -0.128px;
+}
+
+.general-card2 {
+    display: flex;
+    
+    padding: 30px;
+    align-items: center;
+    gap: 25px;
+    border-radius: 15px;
+    background: var(--Gray-White, #FFF);
+}
+.general-card2 .general-icon {
+    display: flex;
+    padding: 10px;
+    border-radius: 8px;
+    background: var(--Error-100, #FFF0F0);
+}
+.general-card2 .general-icon img{
+    width: 35px;
+    height: 35px;
+}
+.general-card2 .general-card-text {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+}
+.general-card2 .general-card-text h4 {
+    color: var(--Gray-900, #1D2026);
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 29.246px; 
+}
+.general-card2 .general-card-text h5 {
+    color: var(--Gray-700, #4E5566);
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20.107px; 
+    letter-spacing: -0.128px;
+}
+
+.general-card3 {
+    display: flex;
+    padding: 30px;
+    align-items: center;
+    gap: 25px;
+    border-radius: 15px;
+    background: var(--Gray-White, #FFF);
+}
+.general-card3 .general-icon {
+    display: flex;
+    padding: 10px;
+    border-radius: 8px;
+    background: rgba(155, 134, 189, 0.22);
+}
+.general-card3 .general-icon img{
+    width: 35px;
+    height: 35px;
+}
+.general-card3 .general-card-text {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+}
+.general-card3 .general-card-text h4 {
+    color: var(--Gray-900, #1D2026);
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 29.246px; 
+}
+.general-card3 .general-card-text h5 {
+    color: var(--Gray-700, #4E5566);
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20.107px; 
+    letter-spacing: -0.128px;
+}
+
+.general-card4 {
+    display: flex;
+    
+    padding: 30px;
+    align-items: center;
+    gap: 25px;
+    border-radius: 15px;
+    background: var(--Gray-White, #FFF);
+}
+.general-card4 .general-icon {
+    display: flex;
+    padding: 10px;
+    border-radius: 8px;
+    background: rgba(255, 218, 251, 0.70);
+}
+.general-card4 .general-icon img{
+    width: 35px;
+    height: 35px;
+}
+.general-card4 .general-card-text {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+}
+.general-card4 .general-card-text h4 {
+    color: var(--Gray-900, #1D2026);
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 29.246px; 
+}
+.general-card4 .general-card-text h5 {
+    color: var(--Gray-700, #4E5566);
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20.107px; 
+    letter-spacing: -0.128px;
+}
+
+
+    /***** CARDS COMPLETE *****/
+.activity-courses {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.recent-activity-card{
+    width: 140%;
+    position: relative;
+    border-radius: 13.39px;
+    background-color: #fff;
+    height: auto;
+    bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px; 
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header h4 {
+    position: relative;
+    font-size: 18.75px;
+    letter-spacing: -0.01em;
+    font-weight: 500;
+    font-family: Inter;
+    color: #674188;
+    display: inline-block;
+    flex: 0 0  auto;
+}
+
+.dropdown-toggle {
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+    letter-spacing: -0.01em;
+    line-height: 17.5px;
+    font-weight: 300;
+    font-family: Inter;
+    color: #674188;
+    text-align: left;
+    display: flex;
+    align-items: center;
+}
+.dropdown-menu {
+    display: none;
+    list-style-type: none;
+    padding: 10px;
+} 
+.dropdown-menu li {
+    padding: 10px; /* add some padding to each list item */
+    border-bottom: 1px solid #ccc; /* add a border between list items */
+  }
+  
+  .dropdown-menu li:last-child {
+    border-bottom: none; /* remove the border from the last list item */
+  }
+  
+.dropdown-menu li a {
+    text-decoration: none;
+font-size: 16px;
+letter-spacing: -0.01em;
+line-height: 17.5px;
+font-weight: 300;
+font-family: Inter;
+color: #674188;
+height: 17.4px;
+}
+.dropdown-menu.show {
+    display: block;
+}
+
+
+
+hr {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    width: 100%;
+    position: relative;
+    border-top: 1.3px solid rgba(122, 120, 123, 0.21);
+    height: 1.3px;
+}
+.notifications {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.save-button {
+    transform: translateX(60px);
+
+    width: 60%;
+    border-radius: 25px;
+    background-color: #9b86bd;
+    height: 46.1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    color: #fff;
+}
+
+.notification-row {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+.notification-row-img {
+    border-radius: 50%;
+    background-color: #674188;
+    object-fit: cover;
+    padding: 10px;
+}
+.notification-row-img img{
+    width: 20px;
+    height: 20px;
+    transform: translateY(3px);
+    object-fit: cover;
+}
+.notification-row-text h5 {
+    font-weight: 300;
+    line-height: 19.82px;
+    color: #4e5566;
+    font-size: 14px;
+    letter-spacing: -0.01em;
+    font-family: Inter;
+}
+.notification-row-text h6 {
+    font-weight: 400;
+    line-height: 20px;
+    color: #bbb8bc;
+    font-size: 12px;
+    letter-spacing: -0.01em;
+}
+.notifications .editProfileBtn {
+    margin-top: 30px;
+    transform: translateX(50px);
+    width: 65%;
+    border-radius: 29.04px;
+    border: none;
+    background-color: #9b86bd;
+    height: 46.1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 9.7px 23.2px;
+    font-size: 17.42px;
+    color: #fff;
+}
+.myCourses {
+    display: flex;
+    width: 69%;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    gap: 25px;
+}
+.courses-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 340px;
+}
+.title{
+    font-family: Inter;
+    font-weight: 600;
+    font-size: 24px;
+    color: #000000;
+}
+.buttons-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 400;
+    font-size: 16px;
+    color: #000000;
+    gap: 20px;
+}
+.video {
+border-radius: 20px;
+height: 30.8px;
+display: flex;
+align-items: center;
+text-align: center;
+justify-content: space-between;
+padding: 10px 25px;
+gap: 10px;
+background-color: rgba(103, 65, 136, 0.18);
+}
+.video img {
+    height: auto;
+    width: 15px;
+}
+.video h5{
+    color: rgba(103, 65, 136, 0.41);
+}
+.course {
+    border-radius: 20px;
+    height: 30.8px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    padding: 10px 25px;
+    gap: 10px;
+    background-color: rgba(122, 120, 123, 0.21);
+
+}
+.course img {
+    height: auto;
+    width: 15px;
+}
+.course h5{
+    color: rgba(122, 120, 123, 0.43);
+
+}
+.carousel-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+.course-cards {
+    
+    display: flex;
+    margin-bottom: 25px;
+}
+.courseCard {
+    border-radius: 15px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 15px;
+    box-sizing: border-box;
+    gap: 8px;
+    cursor: pointer;
+    text-align: left;   
+    min-width: 250px; 
+    margin: 0 5px; 
+
+}
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.carousel-button.prev {
+    left: 0;
+}
+
+.carousel-button.next {
+    right: 0;
+}
+.courseCard img {
+    width: 100%;
+    position: relative;
+    border-radius: 11.44px;
+    overflow: hidden;
+    height: 107.7px;
+    object-fit: cover;
+}
+.courseInfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    color: #674188;
+    
+}
+.courseInfo p  {
+    padding: 5px 20px;
+    background-color: rgba(122, 120, 123, 0.15);
+    border-radius: 28px;
+    font-size: 12px;
+    font-weight: 400;
+}
+.courseInfo h6 {
+    transform: translateX(10px);
+    padding: 5px 10px;
+    border-radius: 28px;
+    font-size: 10px;
+    font-weight: 400;
+}
+.courseCard h4{
+    width: 100%;
+position: relative;
+font-size: 14px;
+text-transform: capitalize;
+font-weight: 600;
+color: #202020;
+text-align: left;
+display: inline-block;
+}
+
+
+/** my courses styling**/
+
+/** account settings styling **/
+.settings-password-students {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    gap: 25px;
+    margin-top: 15px;
+}
+
+.account-settings {
+    width: 40%;
+    position: relative;
+    border-radius: 13.39px;
+    background-color: #fff;
+    height: auto;
+    bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 15px 20px;
+}
+.account-settings .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.account-settings  h4 {
+    position: relative;
+    font-size: 18.75px;
+    letter-spacing: -0.01em;
+    font-weight: 500;
+    font-family: Inter;
+    color: #674188;
+    display: inline-block;
+    flex: 0 0  auto;
+}
+.account-settings hr {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    width: 100%;
+    position: relative;
+    border-top: 1.3px solid rgba(122, 120, 123, 0.21);
+    height: 1.3px;
+}
+.settings-boxes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.left-box {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 12px;
+}
+.inputbox {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    gap: 3px;
+    
+}
+.inputbox label {
+    font-size: 17.41px;
+    line-height: 150%;
+    font-weight: 400;
+    color: #7a787b;
+    text-align: left;
+    display: inline-block;
+}
+.inputbox input {
+    width: 100%;
+position: relative;
+border-radius: 4.02px;
+border: 0.7px solid rgba(122, 120, 123, 0.43);
+box-sizing: border-box;
+height: 26.8px;
+padding-left: 10px;
+}
+.right-box {
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.uploadImg {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    background-color: rgba(103, 65, 136, 0.18);
+    padding: 20px 20px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+    color: #7a787b;
+
+}
+.uploadImg img {
+    width: 100%;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+
+.editProfileBtn{
+    margin-top: 30px;
+    transform: translateX(90px);
+    width: 50%;
+    border-radius: 29.04px;
+    border: none;
+    background-color: #9b86bd;
+    height: 46.1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 9.7px 23.2px;
+    font-size: 17.42px;
+    color: #fff;
+    }
+
+/** account settings styling **/
+
+/*** Change password styling **/
+.password-change{
+    width: 30%;
+    position: relative;
+    border-radius: 13.39px;
+    background-color: #fff;
+    height: auto;
+    bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 15px 20px;
+}
+.password-change .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.password-change  h4 {
+    position: relative;
+    font-size: 18.75px;
+    letter-spacing: -0.01em;
+    font-weight: 500;
+    font-family: Inter;
+    color: #674188;
+    display: inline-block;
+    flex: 0 0  auto;
+}
+.password-change hr {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    width: 100%;
+    position: relative;
+    border-top: 1.3px solid rgba(122, 120, 123, 0.21);
+    height: 1.3px;
+}
+
+.password-change .editProfileBtn{
+    margin-top: 30px;
+    transform: translateX(50px);
+    width: 65%;
+    border-radius: 29.04px;
+    border: none;
+    background-color: #9b86bd;
+    height: 46.1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 9.7px 23.2px;
+    font-size: 17.42px;
+    color: #fff;
+    }
+/*** Change password styling **/
+
+.my-students {
+    width: 40%;
+    position: relative;
+    border-radius: 13.39px;
+    background-color: #fff;
+    height: auto;
+    bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 15px 20px;
+}
+.students {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+.student-row {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    gap: 50px;
+    padding: 10px 20px;
+}
+.student-row-left {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    transform: translateX(-20px);
+}
+.student-row-left img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.student-row-info {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+.student-row-info h4{
+    font-size: 17.41px;
+text-transform: capitalize;
+font-weight: 700;
+color: #202020;
+display: inline-block;
+}
+.student-row-info h5 {
+font-size: 12px;
+text-transform: capitalize;
+font-weight: 400;
+color: #202020;
+display: inline-block;
+}
+.left-arrow {
+    transform: translate(60px, 10px);
+}
